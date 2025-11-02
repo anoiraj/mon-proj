@@ -1,0 +1,9 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  web:
+    image: <TON_DOCKERHUB_USERNAME>/monapp:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
